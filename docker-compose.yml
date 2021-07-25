@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  simple:
+    build: .
+    command: sh -c "yarn run dev"
+    volumes:
+      - .:/simple
+    ports:
+      - 5000:5000
+    restart: always
